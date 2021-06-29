@@ -11,7 +11,7 @@ export default class Product extends Component {
 
         return (
             // note: productList.js, before <ProductConsumer> must add className="row" for below bootstrap col to work 
-            <ProductWrapper className={"col-10 col-md-6 col-lg-4 mx-auto my-3"}>  
+            <ProductWrapper className={"col-12 col-md-6 col-lg-4 mx-auto my-3"}>  
                  <div className={"card"}>  
                         <ProductConsumer className={"card-text"}>
                             {value=>{
@@ -112,7 +112,6 @@ const ProductWrapper = styled.div`
     img{
         display:block;
         min-width: 200px;
-       
     }
   .container-fluid{
         display: grid;
