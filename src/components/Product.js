@@ -20,7 +20,8 @@ export default class Product extends Component {
                                     onClick={()=>value.handleDetail(id)}
                                 >
                                 <Link to="/details">
-                                    <img src={img} alt="product" className="card-img-top" />
+                            {/* Note:project deployed to github have to use the img path in gh-pages github  */}
+                                    <img src={img} alt="product" className="card-img-top" />                                    
                                 </Link>
 
                             <button className={"cart-btn"}
