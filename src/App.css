@@ -1,0 +1,114 @@
+
+
+body{
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif, Helvetica;
+    background-color:var(--bgColor); 
+    box-shadow: var(--shadow);
+    box-sizing: border-box;
+   
+    
+  }
+
+
+  nav{
+    background-color: var(--base-color);
+    width: 100%;
+  }
+  
+  :root{
+
+    --shadow: 0 1px 5px rgb(104, 104, 104, 0.8);
+    --btn-border: blue;
+    --primary-red: red;
+    --primary-color: #ff4c68;
+    --bgColor: #4cffe3; 
+    --base-color:#aefff2; 
+    --button-hover:#b3989c;
+    --text-shadow:1px 1px 2px #666;
+  
+      /* brown-set */
+      --primary-brown:#a52a2a;
+      --highlight-brown: #2aa5a5;
+      --bgColor-brown:#fdf8f8;
+        --base-color-brown: #f9e8e8;
+  
+      /* purple-set    */
+      --primary-purple: #800080;
+      --highlight-purple: #008000;
+      --bgColor-purple:#ffe2ff;
+      --base-color-purple: #fff6ff;
+    /* blue-set */
+       --primary-blue:#6066f4;
+       --highlight-blue: #f4ee60;
+       --bgColor-blue:#60f4ee;
+    
+      
+  }
+  
+  
+  
+  .product-image{
+    width:30%;
+  }
+  
+  P{
+    color: darkslategray;
+  }
+  /* button not in use yet*/
+  .btn {
+    display: inline-block;
+    background-color: var(--base-color);
+    border: 0.5px solid gray;
+    color: darkslategray;
+    padding: 4px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: inherit;
+  }
+  
+  .btn:hover{
+    background-color: darkslategray;
+    color: var(--base-color);
+  
+  }
+  
+  .btn:focus {
+    outline: none;
+  }
+  
+  .btn:active {
+    transform: scale(0.98);
+  }
+  
+  .btn-block {
+    display: block;
+    width: 100%;
+  }
+  
+  /* CartItem.js */
+  .btn-bin:hover, 
+  .btn-decrement:hover,
+  .btn-increment:hover,
+  /* Navbar.js */
+  .nav-link:hover
+  {
+    cursor: pointer;
+    transform: scale(1.07);
+    transition: all 0.5s linear;
+    text-decoration: none;
+  
+  }
+  
+  /* CartTotal.js */
+  .btn-clearCart:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 0.5s linear;
+  }
+
