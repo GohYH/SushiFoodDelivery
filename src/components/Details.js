@@ -45,7 +45,9 @@ export default class Details extends Component {
                                     <div className="text-muted lead">
                                         {info}
                                     </div>
-                                    <Link to="/SushiFoodDelivery">
+                                    {/* note: for github have to add / to link end */}
+                                    {/* if this page at local pc not working manually remove / from address */}
+                                    <Link to="/SushiFoodDelivery/">
                                          <button className="btn text-capitaize mr-4 mt-5" >
                                              back to product
                                         </button>
