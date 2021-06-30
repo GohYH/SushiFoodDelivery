@@ -3,7 +3,7 @@ export const storeProducts = [
     {
       id: 1,
       title: "Sweet Potato Mega Combo-Salad",
-      // img: "img/product-1.png" => actual file relative path
+      // img: "SushiFoodDelivery/img/product-1.png",
       // project uploaded to github have to use the img path in gh-pages github 
       img: "SushiFoodDelivery/img/product-1.png",
       price: 15,
