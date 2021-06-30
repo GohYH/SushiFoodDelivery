@@ -6,7 +6,7 @@ export default class Default extends Component {
             <div style={pageContentContainer}>
                 <h3 style={pageContent}> 
                     <span style={textContent}>
-                        Page not found
+                        Link to Home Page
                     </span> 
                          - Please click the <span style={textContent}>Menu</span> for Home Page
                 </h3>
