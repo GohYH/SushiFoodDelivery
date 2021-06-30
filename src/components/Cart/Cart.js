@@ -22,7 +22,7 @@ export default class Cart extends Component {
                                         <Title name="your" title="order details" />
                                     </div>
 
-                                    <div className="container-fluid pr-5 pl-5 pb-5 mb-5">
+                                    <div className="container-fluid pr-0 pl-0 pb-5 mb-5">
                                         <Stepper/> 
                                     </div>
                                     <CartColumns />

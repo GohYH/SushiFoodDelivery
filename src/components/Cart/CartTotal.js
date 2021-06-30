@@ -10,7 +10,7 @@ export default class CartTotal extends Component {
             <React.Fragment>
                 <div className="text-right pr-5">
 
-                    <Link to="/">
+                    <Link to="/cart">
                      <button
                         className="btn-clearCart btn btn-outline-danger mb-3"
                         style={{background:'var(--primary-color)', color:"white"}}

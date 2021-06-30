@@ -1,6 +1,6 @@
 import React from 'react';
 import CartTotal from './CartTotal';
-
+import {Link} from 'react-router-dom';
 
 // utube: 4:38,4:46-till decrement. export default func
 const CartItem = ({item,value}) => {
@@ -10,22 +10,20 @@ const CartItem = ({item,value}) => {
         
         <div className="row my-3 text-capitalize text-center">
             
-            {/* <div className="container-fluid pr-5 pl-5 pb-5 mb-5">
-                <Stepper/> 
-            </div> */}
             <div className="col-10 mx-auto col-lg-2">
                 <img src={img} 
-                style={{width:'5rem', height:'5rem'}} 
+                // style={{width:'5rem', height:'5rem'}}
+                style={{maxWidth:'60%'}}
                 className="img-fluid"
-                alt=""
+                alt="cartimage"
              />
             </div>
-            <div className="col-10 mx-auto col-lg-2">
-                <span className="d-lg-none">product:</span>
+            <div className="col-10 mx-auto col-lg-2 mt-2">
+                <b className="d-lg-none">product: </b>
                 {title}
             </div>
             <div className="col-10 mx-auto col-lg-2">
-                <span className="d-lg-none">price: </span>
+                <b className="d-lg-none">price: </b>
                 ${price}
             </div>
             <div className="col- mx-auto col-lg-2 my-2 my-lg-0">
@@ -49,22 +47,22 @@ const CartItem = ({item,value}) => {
               </div>     
 
               <div className="col-10 mx-auto col-lg-2">
-                  <div onClick={()=>removeItem(id)}>
-                       <h4 className="btn-bin" style={wasteBin}> 🗑 </h4>
-                   </div>
-               </div>
+                    <div onClick={()=>removeItem(id)}>
+                        <h4 className="btn-bin" style={wasteBin}> 🗑 </h4>
+                    </div>
+                </div>
+
                 <div className="col-10 mx-auto col-lg-2 mb-5 pb-5">
                     <strong>item total : $ {total}</strong>
                 </div>
                 <div className="w-100">
                     <CartTotal value={value}/>
-                </div>
-                
-                
+                </div>            
         </div>
                                   
     )
 }
+
 const wasteBin ={
     color:'red',
     fontSize:'28px',

@@ -60,34 +60,33 @@ export default class Form extends Component {
                
         return (
             // bootstrap: display flex @ large viewport, resume to 1 col display when below it.
-            <div className="d-lg-flex">
+            <div className="d-lg-flex mx-0 mx-md-5 px-0 px-md-3">
                     <form 
                     onSubmit={this.handleSubmit} 
                     action="POST" method="GET" 
                     className="mt-5 text-left"
                     style={formTop}
-                 
                     >
                     
-                    <fieldset>
+                    <fieldset className="mx-3">
                         <label>Your Name</label><br></br>
                             <input type='text' 
                             required
-                            className="pl-2 pt-1 pb-1 mb-2" 
+                            className="px-2 py-1 mb-2" 
                             style={input}
                             placeholder="e.g. Alan" value={this.state.username} onChange={this.handleUsername} 
                             /><br></br>
                     
                         <label>Block</label><br></br>
                             <input
-                            className=" pl-2 pt-1 pb-1 mb-2" 
+                            className="px-2 py-1 mb-2" 
                             style={input}
                             type='text' placeholder="e.g. 22A" maxlength="10" value={this.state.block} onChange={this.handleBlock} required
                             /><br></br>
               
                         <label>Unit</label><br></br>
                             <input
-                            className=" pl-2 pt-1 pb-1 mb-2" 
+                            className="px-2 py-1 mb-2" 
                             style={input}
                             type='tel' placeholder="06-1225" maxlength="7" value={this.state.unit} onChange={this.handleUnit} required
                             /><br></br>
@@ -95,21 +94,21 @@ export default class Form extends Component {
                         <label>Street Name</label><br></br>
                             <input type='text' 
                             required
-                            className="pl-2 pt-1 pb-1 mb-2" 
+                            className="px-2 py-1 mb-2" 
                             style={input}
                             placeholder="e.g. Ang Mo Kio, Stree 13" value={this.state.streetname} onChange={this.handleStreetname} 
                             /><br></br>
                             
                             <label>Postal Code</label><br></br>
                             <input
-                            className=" pl-2 pt-1 pb-1 mb-2" 
+                            className="px-2 py-1 mb-2" 
                             style={input}
                             type='tel' placeholder="123456" pattern="[0-9]{6}" maxlength="6" value={this.state.postalcode} onChange={this.handlePostalcode} required
                             /><br></br>
 
                         <label>Contact number</label><br></br>
                             <input
-                            className=" pl-2 pt-1 pb-1 mb-2" 
+                            className="px-2 py-1 mb-2" 
                             style={input}
                             type='tel' placeholder="12345678" pattern="[0-9]{8}" maxlength="8" value={this.state.contact} onChange={this.handleContact} required
                             /><br></br>
@@ -120,14 +119,15 @@ export default class Form extends Component {
                             type="">Confirm</button>
                     </fieldset>
                 </form>
-                <div style={formBottom}>
+                <div style={formBottom} className="mx-auto">
                     <h5 style={personalDetails}>{this.state.username} <span style={innerText}>Personal Details</span></h5>
-                {/* <p className="pl-4 mt-3">{this.state.username}</p>     */}
-                <p className="pl-4">{this.state.block}</p>
-                <p className="pl-4">{this.state.unit}</p>
-                <p className="pl-4">{this.state.streetname}</p>
-                <p className="pl-4">{this.state.postalcode}</p>
-                <p className="pl-4 pb-3">{this.state.contact}</p>
+                    <div className="mx-4">
+                            <p>{this.state.block}</p>
+                            <p>{this.state.unit}</p>
+                            <p>{this.state.streetname}</p>
+                            <p>{this.state.postalcode}</p>
+                            <p className="pb-3">{this.state.contact}</p>
+                    </div>
                 </div>
          </div>
         )

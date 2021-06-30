@@ -33,9 +33,8 @@ function getStepContent(step) {
 
   switch (step) {
     //   note: to pass string single quote required
-    case 0:
-      return <Form />;
-       
+    case 0: return <Form />;
+
       case 1:
         return <div style={{color:"darkslategray", padding:'20px'}}>
         
@@ -105,7 +104,8 @@ export default function HorizontalLinearStepper() {
   return (
 
     <div className={classes.root} 
-    style={{boxShadow:'var(--shadow)'}}>
+    // style={{boxShadow:'var(--shadow)'}}>
+    >
       <Stepper activeStep={activeStep}>
         {steps.map((label, index) => {
           const stepProps = {};
@@ -124,7 +124,7 @@ export default function HorizontalLinearStepper() {
         })}
       </Stepper>
       
-<div className="pl-5 pr-5 pb-5">
+<div className="pb-5">
         {activeStep === steps.length ? (
           <div>
             <Typography className={classes.instructions}>
@@ -137,7 +137,7 @@ export default function HorizontalLinearStepper() {
         ) : (
           <div>
             <Typography className={classes.instructions}>{getStepContent(activeStep)}</Typography>
-            <div>
+            <div className="mx-0 mx-md-5 px-0 px-md-4">
               <Button disabled={activeStep === 0} onClick={handleBack} className={classes.button}>
                 Back
               </Button>

@@ -409,8 +409,8 @@ const orderidHandler = ({orderId}) => {
   return (
         <div>
             
-            <div className="d-lg-flex justify-content-evenly">
-              <div style={groupOne}> 
+            <div className="d-md-flex justify-content-center">
+              <div style={groupOne} className="mb-4"> 
                   <h5 className={"pb-2"} style={groupText}> Base - choosen: {count} / (1 min - 2 max)</h5>
                 <div style={checkedContainerTop}>
                   <div style={checkedContainer}>
@@ -471,7 +471,7 @@ const orderidHandler = ({orderId}) => {
           </div> {/* groupOne End*/}
          
           {/* Group-2 */}
-        <div style={groupTwo}>
+        <div style={groupTwo} className="mb-4">
                 <div>
                     <h5 className={"pb-2"} style={groupText}> Essential - choosen: {countB} / (5 min - 7 max)</h5>
                   <div style={checkedContainerTop}>
@@ -639,14 +639,14 @@ const orderidHandler = ({orderId}) => {
             </div>   {/* group2 end */}
             </div>
           {/* Group-C */}
-          <div style={groupThree}> 
+          <div style={groupThree} className="mb-4"> 
               <div>
                     <h5 className={"pb-2"} style={groupText}> Sprinkle - choosen: {countC} / (1 min - 2 max)</h5>
                <div style={checkedContainerTop}>
                   <div style={checkedContainer}>
                   <h6 > 
                   <input
-                  className={"mt-2"}
+                  className={"mt-2 mb-1"}
                     type="checkbox"
                     name="Turkey Bacon Bits"
                     disabled={isDisabledC}
@@ -660,7 +660,7 @@ const orderidHandler = ({orderId}) => {
                   <input       
                     type="checkbox"
                     name="Roasted Almond Flakes"
-                    className={"mt-sm-1 mt-3"}
+                    className={"mb-2"}
                     disabled={isDisabledC}
                     value={isCheckedCtwo}
                     onChange={setisCheckedCtwoHandler}
@@ -672,7 +672,7 @@ const orderidHandler = ({orderId}) => {
                   <input
                     type="checkbox"
                     name="Nori Strips(Seaweed)"
-                    className={"mt-sm-1 mt-4"}
+                    className={"mb-2 mb-md-1"}
                     disabled={isDisabledC}
                     value={isCheckedCthree}
                     onChange={setisCheckedCthreeHandler}
@@ -684,7 +684,7 @@ const orderidHandler = ({orderId}) => {
                   <input
                     type="checkbox"
                     name="Chisken Floss"
-                    className={"mt-sm-1 mt-3"}
+                    className={"mb-2"}
                     disabled={isDisabledC}
                     value={isCheckedCfour}
                     onChange={setisCheckedCfourHandler}
@@ -696,6 +696,7 @@ const orderidHandler = ({orderId}) => {
                   <input
                     type="checkbox"
                     name="Okaka Furikake"
+                    className={"mb-2 mb-md-1"}
                     disabled={isDisabledC}
                     value={isCheckedCfive}
                     onChange={setisCheckedCfiveHandler}
@@ -707,7 +708,7 @@ const orderidHandler = ({orderId}) => {
                   <input
                     type="checkbox"
                     name="Golden Tempura Crunch"
-                    className={"mt-sm-1 mt-3"}
+                    className={"mb-2 mb-md-1"}
                     disabled={isDisabledC}
                     value={isCheckedCsix}
                     onChange={setisCheckedCsixHandler}
@@ -717,10 +718,9 @@ const orderidHandler = ({orderId}) => {
 
                   <h6> 
                   <input
-                    className={"mt-1"}
                     type="checkbox"
                     name="Dried Cranberries"
-                    className={"mt-sm-1 mt-3"}
+                    className={"mb-2 mb-md-1"}
                     disabled={isDisabledC}
                     value={isCheckedCseven}
                     onChange={setisCheckedCsevenHandler}
@@ -730,9 +730,9 @@ const orderidHandler = ({orderId}) => {
 
                   <h6> 
                   <input
-                    className={"mt-1"}
                     type="checkbox"
                     name="Sapphire Raisins"
+                    className={"mb-3 mb-md-1"}
                     disabled={isDisabledC}
                     value={isCheckedCeight}
                     onChange={setisCheckedCeightHandler}
@@ -753,15 +753,15 @@ const orderidHandler = ({orderId}) => {
                 </div>  
                
                 <div>
-                    <div className={"pb-1"}>Turkey Bacon Bits{isCheckedCone && <span>✔</span>}</div>
-                    <div className={"pb-1"}>Roasted Almond Flakes{isCheckedCtwo && <span>✔</span>}</div>
-                    <div className={"pb-1"}>Nori Strips(Seaweed){isCheckedCthree && <span>✔</span>}</div>
-                    <div className={"pb-1"}>Chicken Floss{isCheckedCfour && <span>✔</span>}</div>
-                    <div className={"pb-1"}>Okaka Furikake{isCheckedCfive && <span>✔</span>}</div>
-                    <div className={"pb-1"}>Golden Tempura Crunch{isCheckedCsix && <span>✔</span>}</div>
-                    <div className={"pb-1"}>Dried Cranberries{isCheckedCseven && <span>✔</span>}</div>
-                    <div className={"pb-1"}>Sapphire Raisins{isCheckedCeight && <span>✔</span>}</div>
-                    <div className={"pb-1"}>Bonito Fish Flakes{isCheckedCnine && <span>✔</span>}</div>
+                    <div className={"pb-1 pb-md-2"}>Turkey Bacon Bits{isCheckedCone && <span>✔</span>}</div>
+                    <div className={"pb-2 pb-md-1"}>Roasted Almond Flakes{isCheckedCtwo && <span>✔</span>}</div>
+                    <div className={"pb-2 pb-md-1"}>Nori Strips(Seaweed){isCheckedCthree && <span>✔</span>}</div>
+                    <div className={"pb-2 pb-md-1"}>Chicken Floss{isCheckedCfour && <span>✔</span>}</div>
+                    <div className={"pb-2 pb-md-1"}>Okaka Furikake{isCheckedCfive && <span>✔</span>}</div>
+                    <div className={"pb-2 pb-md-1"}>Golden Tempura Crunch{isCheckedCsix && <span>✔</span>}</div>
+                    <div className={"pb-2 pb-md-1"}>Dried Cranberries{isCheckedCseven && <span>✔</span>}</div>
+                    <div className={"pb-2 pb-md-1"}>Sapphire Raisins{isCheckedCeight && <span>✔</span>}</div>
+                    <div className={"pb-2 pb-md-1"}>Bonito Fish Flakes{isCheckedCnine && <span>✔</span>}</div>
                 </div>
 
           </div>
@@ -770,6 +770,7 @@ const orderidHandler = ({orderId}) => {
         </div> {/* group 3 end */}
        </div> 
     </div>  
+    <div className="d-flex flex-column mx-0 mx-md-5 px-0 px-md-3">
                     <button
                     style={btn}
                     onClick={submitHandler}
@@ -841,7 +842,7 @@ const orderidHandler = ({orderId}) => {
            </h5>          
        </div>
     </div> 
-                    
+  </div>                
   )
 }
 
