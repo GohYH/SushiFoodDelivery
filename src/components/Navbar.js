@@ -16,7 +16,8 @@ export default class Navbar extends Component {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <h3 className="ml-auto" style={navTitle}>Japanese Sushi Delivery</h3>
                         <ul className="navbar-nav ml-auto">
-                            <Link to="/" className="nav-item mr-5">
+
+                            <Link to="/SushiFoodDelivery" className="nav-item mr-5">
                                 <h2 style={NavText} className="nav-link">Menu</h2>
                             </Link>
                             <Link to="/cart" className="nav-item ml-5 mr-4">
