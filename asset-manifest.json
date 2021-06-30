@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/SushiFoodDelivery/static/css/main.f89e5fb0.chunk.css",
-    "main.js": "/SushiFoodDelivery/static/js/main.c2f21f31.chunk.js",
-    "main.js.map": "/SushiFoodDelivery/static/js/main.c2f21f31.chunk.js.map",
+    "main.js": "/SushiFoodDelivery/static/js/main.ee9baa2a.chunk.js",
+    "main.js.map": "/SushiFoodDelivery/static/js/main.ee9baa2a.chunk.js.map",
     "runtime-main.js": "/SushiFoodDelivery/static/js/runtime-main.d2995688.js",
     "runtime-main.js.map": "/SushiFoodDelivery/static/js/runtime-main.d2995688.js.map",
-    "static/js/2.18f2384f.chunk.js": "/SushiFoodDelivery/static/js/2.18f2384f.chunk.js",
-    "static/js/2.18f2384f.chunk.js.map": "/SushiFoodDelivery/static/js/2.18f2384f.chunk.js.map",
+    "static/js/2.d2b33cfc.chunk.js": "/SushiFoodDelivery/static/js/2.d2b33cfc.chunk.js",
+    "static/js/2.d2b33cfc.chunk.js.map": "/SushiFoodDelivery/static/js/2.d2b33cfc.chunk.js.map",
     "static/js/3.77a32296.chunk.js": "/SushiFoodDelivery/static/js/3.77a32296.chunk.js",
     "static/js/3.77a32296.chunk.js.map": "/SushiFoodDelivery/static/js/3.77a32296.chunk.js.map",
     "index.html": "/SushiFoodDelivery/index.html",
     "static/css/main.f89e5fb0.chunk.css.map": "/SushiFoodDelivery/static/css/main.f89e5fb0.chunk.css.map",
-    "static/js/2.18f2384f.chunk.js.LICENSE.txt": "/SushiFoodDelivery/static/js/2.18f2384f.chunk.js.LICENSE.txt"
+    "static/js/2.d2b33cfc.chunk.js.LICENSE.txt": "/SushiFoodDelivery/static/js/2.d2b33cfc.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d2995688.js",
-    "static/js/2.18f2384f.chunk.js",
+    "static/js/2.d2b33cfc.chunk.js",
     "static/css/main.f89e5fb0.chunk.css",
-    "static/js/main.c2f21f31.chunk.js"
+    "static/js/main.ee9baa2a.chunk.js"
   ]
 }
