@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/SushiFoodDelivery/static/css/main.f89e5fb0.chunk.css",
-    "main.js": "/SushiFoodDelivery/static/js/main.57bd5f87.chunk.js",
-    "main.js.map": "/SushiFoodDelivery/static/js/main.57bd5f87.chunk.js.map",
+    "main.js": "/SushiFoodDelivery/static/js/main.ebee37d7.chunk.js",
+    "main.js.map": "/SushiFoodDelivery/static/js/main.ebee37d7.chunk.js.map",
     "runtime-main.js": "/SushiFoodDelivery/static/js/runtime-main.d2995688.js",
     "runtime-main.js.map": "/SushiFoodDelivery/static/js/runtime-main.d2995688.js.map",
     "static/js/2.d2b33cfc.chunk.js": "/SushiFoodDelivery/static/js/2.d2b33cfc.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.d2995688.js",
     "static/js/2.d2b33cfc.chunk.js",
     "static/css/main.f89e5fb0.chunk.css",
-    "static/js/main.57bd5f87.chunk.js"
+    "static/js/main.ebee37d7.chunk.js"
   ]
 }
