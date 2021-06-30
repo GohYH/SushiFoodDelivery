@@ -45,7 +45,7 @@ export default class Details extends Component {
                                     <div className="text-muted lead">
                                         {info}
                                     </div>
-                                    <Link to="/">
+                                    <Link to="/SushiFoodDelivery">
                                          <button className="btn text-capitaize mr-4 mt-5" >
                                              back to product
                                         </button>
