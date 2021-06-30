@@ -19,13 +19,10 @@ class App extends Component {
             <Navbar />
             
               <Switch>
-{/* Added SushiFoodDelivery path to solve issue on Github load home pg using this path */}
-                <Route exact path="/SushiFoodDelivery" component={ProductList} />
-                {/* <Route exact path="/" component={ProductList} /> */}
+                <Route exact path="/" component={ProductList} />
                 <Route path="/details" component={Details} />
                 <Route path="/cart" component={Cart} />
-                <Route component={Default} />
-              
+                <Route component={Default} />  
               </Switch>
               <Modal />
 
